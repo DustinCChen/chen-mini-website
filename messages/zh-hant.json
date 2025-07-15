@@ -1,0 +1,27 @@
+{
+  "HomePage": {
+    "title": "我的網站",
+    "welcomeMessage": "歡迎來到我的網站！在這裡你可以找到關於我和我的工作的相關信息。",
+    "latestPosts": "最新文章"
+  },
+  "PostPage": {
+    "publishedOn": "發佈於"
+  },
+  "Footer": {
+    "contactMe": "聯繫我"
+  },
+  "Header": {
+    "home": "首頁",
+    "about": "關於",
+    "article": "文章",
+    "contact": "聯繫"
+  },
+  "AboutPage": {
+    "title": "關於我",
+    "description": "這是關於我的頁面，你可以在這裡了解更多關於我的信息。"
+  },
+  "ContactPage": {
+    "title": "聯繫我",
+    "formInstructions": "請填寫下面的表單來聯繫我。"
+  }
+}

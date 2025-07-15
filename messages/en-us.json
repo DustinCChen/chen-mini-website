@@ -1,0 +1,27 @@
+{
+  "HomePage": {
+    "title": "My Website",
+    "welcomeMessage": "Welcome to my website! Here you can find information about me and my work.",
+    "latestPosts": "Latest Posts"
+  },
+  "PostPage": {
+    "publishedOn": "Published on"
+  },
+  "Footer": {
+    "contactMe": "Contact Me"
+  },
+  "Header": {
+    "home": "Home",
+    "about": "About",
+    "article": "Article",
+    "contact": "Contact"
+  },
+  "AboutPage": {
+    "title": "About Me",
+    "description": "This is the about page where you can learn more about me."
+  },
+  "ContactPage": {
+    "title": "Get in Touch",
+    "formInstructions": "Please fill out the form below to contact me."
+  }
+}

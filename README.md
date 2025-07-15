@@ -1,22 +1,19 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## next.js v14 version
+### Getting Started
 
-## Getting Started
-
-First, run the development server:
 
 ```bash
-bun add -D tree-cli 
+bun add -D tree-cli
+./node_modules/.bin/tree --version
 ./node_modules/.bin/tree --ignore node_modules/  -l 5
-# or
-bun dev
 ```
-## git cmd
+### git cmd
 ```bash
 git config --list
-git checkout -b v15-stable
+git checkout -b v14-stable
 git add .
-git commit -m "feature: v15-stable"
-git push origin v15-stable
+git commit -m "feature: v14-stable"
+git push -u origin v14-stable
 ```
-## sources
-- [https://next-intl.dev/docs/usage/configuration](https://next-intl.dev/docs/usage/configuration)
+### sources
+- [https://next-intl.dev/docs/usage/configuration](https://next-intl.dev/docs/usage/configuration)LangSwitcher

@@ -3,7 +3,8 @@ import RSS from "rss";
 import { getAllPostsMeta } from "@/lib/posts";
 import { locales } from "@/i18n";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://chenchangchao.com";
+const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL || "https://chenchangchao.com";
 
 export async function GET() {
   const feed = new RSS({

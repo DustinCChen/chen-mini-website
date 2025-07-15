@@ -1,14 +1,13 @@
 import Link from "next/link";
 import { getAllPostsMeta } from "@/lib/posts";
 import { getTranslations } from "next-intl/server";
-// import { useTranslations } from "next-intl"; // Use the hook for Server Components in v14
 
 type HomePageProps = {
   params: { lang: string };
 };
 
-export default async function HomePage(props: HomePageProps) {
-  const { lang } = await props.params; // 移除 await，因为 params 是同步的
+export default async function HomePage({ params }: HomePageProps) {
+  const lang =  params.lang;
 
   // 传递语言
   const posts = getAllPostsMeta(lang); // 这里不需要 await，因为 getAllPostsMeta 是同步的

@@ -23,5 +23,7 @@
   "ContactPage": {
     "title": "Get in Touch",
     "formInstructions": "Please fill out the form below to contact me."
-  }
+  },
+  "NotFound": {"title": "This page could not be found."},
+  "404": {"title": "This page could not be found."}
 }

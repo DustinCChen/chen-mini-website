@@ -9,6 +9,7 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { notFound } from "next/dist/client/components/navigation";
+// import { LangSwitcher } from "@/components/LangSwitcher";
 
 // const inter = Inter({ subsets: ["latin"] });
 const inter = localFont({
@@ -32,15 +33,17 @@ type RootLayoutProps = {
   params: { lang: string };
 };
 
-export default async function RootLayout(props: RootLayoutProps) {
-  const { children } = props;
-  const { lang } =await props.params; // 移除 await，这里不需要
+export default async function RootLayout({
+  children,
+  params,
+}: RootLayoutProps) {
+  // const { children } = props;
+  const lang = params.lang;
 
   // 2. 在服务器组件(Layout)中获取当前语言环境的翻译消息
-  if (!["en-us", "zh-hans", "zh-hant"].includes(lang)) {
+  if (!locales.includes(lang)) {
     notFound();
   }
-
   const messages = await getMessages();
 
   return (

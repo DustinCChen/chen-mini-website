@@ -26,8 +26,10 @@ export async function generateMetadata({
 }: {
   params: { slug: string; lang: string };
 }) {
+  const lang = await params.lang;
+  const slug = await params.slug;
   try {
-    const { meta } = getPostBySlug(params.slug, params.lang);
+    const { meta } = getPostBySlug(slug, lang);
     return {
       title: meta.title,
       description: meta.excerpt,
@@ -45,15 +47,16 @@ type PostPageProps = {
   params: { slug: string; lang: string };
 };
 
-export default async function PostPage(props: PostPageProps) {
+export default async function PostPage({ params }: PostPageProps) {
   // const t = await getTranslations({
   //   locale: params.lang,
   //   namespace: "PostPage",
   // });
-  const { params } = props;
+  const lang = await params.lang;
+  const slug = await params.slug;
   const t = await getTranslations("PostPage");
   try {
-    const { meta, content } = getPostBySlug(params.slug, params.lang);
+    const { meta, content } = getPostBySlug(slug, lang);
     const components = {
       Callout, // 注册 Callout 组件
       // 你可以在这里注册其他自定义组件

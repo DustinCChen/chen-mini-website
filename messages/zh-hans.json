@@ -23,5 +23,11 @@
   "ContactPage": {
     "title": "联系我",
     "formInstructions": "请填写下面的表单来联系我。"
+  },
+  "NotFound": {
+    "title": "此页面无法找到。"
+  },
+  "404": {
+    "title": "此页面无法找到。"
   }
 }

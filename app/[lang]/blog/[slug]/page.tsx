@@ -52,8 +52,8 @@ export default async function PostPage({ params }: PostPageProps) {
   //   locale: params.lang,
   //   namespace: "PostPage",
   // });
-  const lang = await params.lang;
-  const slug = await params.slug;
+  const lang = params.lang;
+  const slug = params.slug;
   const t = await getTranslations("PostPage");
   try {
     const { meta, content } = getPostBySlug(slug, lang);

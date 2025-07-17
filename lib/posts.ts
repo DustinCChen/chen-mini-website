@@ -4,7 +4,7 @@ import path from "path";
 import matter from "gray-matter";
 
 // const postsDirectory = path.join(process.cwd(), "posts");
-const basePostsDirectory = path.join(process.cwd(), "posts");
+const basePostsDirectory = path.join(process.cwd(), "posts","blog");
 
 // 定义文章元数据的类型
 export interface PostMeta {
